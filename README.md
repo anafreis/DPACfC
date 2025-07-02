@@ -19,26 +19,12 @@ Additional files:
 
 As summarised in the manuscript, the analysis below compares the computational complexity and per-inference efficiency of the evaluated models (measurements taken over 10^5 events on an Intel Core i7-8565U CPU):
 
-----------DPA-DNN----------
-Parameters: 10 124 | FLOPs: 20 044
-Average energy per inference: 0.0543 J
-Average power per inference: 62.9495 W
-Average inference time: 0.0008 s
-----------DPA-LSTM-NN----------
-Parameters: 35 115 | FLOPs: 161 500
-Average energy per inference: 0.1078 J
-Average power per inference: 90.9389 W
-Average inference time: 0.0012 s
-----------DPA-CfC No restriction----------
-Parameters: 77 186 | FLOPs: 370 600
-Average energy per inference: 0.1067 J
-Average power per inference: 73.7802 W
-Average inference time: 0.0014 s
-----------DPA-CfC----------
-Parameters: 22 764 | FLOPs: 126 880
-Average energy per inference: 0.0738 J
-Average power per inference: 58.8712 W
-Average inference time: 0.0012 s
+| Model                           | Parameters | FLOPs   | Energy / inf (J) | Power / inf (W) | Time / inf (s) |
+|---------------------------------|-----------:|--------:|-----------------:|----------------:|---------------:|
+| DPA-DNN                     | 10 124     | 20 044  | 0.0543           | 62.95           | 0.0008         |
+| DPA-LSTM-NN                 | 35 115     | 161 500 | 0.1078           | 90.94           | 0.0012         |
+| DPA-CfC (no restriction)        | 77 186     | 370 600 | 0.1067           | 73.78           | 0.0014         |
+| **DPA-CfC (proposed)**          | **22 764** | **126 880** | **0.0738**     | **58.87**       | **0.0012**     |
 
 
 [1] A. F. Dos Reis, Y. Medjahdi, B. S. Chang, J. Sublime, G. Brante, and C. F. Bader, “Low complexity LSTM-NN-based receiver for vehicular communications in the presence of high-power amplifier distortions,” IEEE Access, vol. 10, pp. 121 985–122 000, 2022.
