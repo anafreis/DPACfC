@@ -17,6 +17,30 @@ Additional files:
 - Python_codes/CfC_Optimization: Presents the optimization process discussed in section III.C.
 - Plotting_Results: Plot the results (the results presented in the paper are available in this repo).
 
+As summarised in the manuscript, the analysis below compares the computational complexity and per-inference efficiency of the evaluated models (measurements taken over 10^5 events on an Intel Core i7-8565U CPU):
+
+----------DPA-DNN----------
+Parameters: 10 124 | FLOPs: 20 044
+Average energy per inference: 0.0543 J
+Average power per inference: 62.9495 W
+Average inference time: 0.0008 s
+----------DPA-LSTM-NN----------
+Parameters: 35 115 | FLOPs: 161 500
+Average energy per inference: 0.1078 J
+Average power per inference: 90.9389 W
+Average inference time: 0.0012 s
+----------DPA-CfC No restriction----------
+Parameters: 77 186 | FLOPs: 370 600
+Average energy per inference: 0.1067 J
+Average power per inference: 73.7802 W
+Average inference time: 0.0014 s
+----------DPA-CfC----------
+Parameters: 22 764 | FLOPs: 126 880
+Average energy per inference: 0.0738 J
+Average power per inference: 58.8712 W
+Average inference time: 0.0012 s
+
+
 [1] A. F. Dos Reis, Y. Medjahdi, B. S. Chang, J. Sublime, G. Brante, and C. F. Bader, “Low complexity LSTM-NN-based receiver for vehicular communications in the presence of high-power amplifier distortions,” IEEE Access, vol. 10, pp. 121 985–122 000, 2022.
 
 [2] S. Han, Y. Oh, and C. Song, “A deep learning based channel estimation scheme for IEEE 802.11p systems,” in ICC 2019 - 2019 IEEE International Conference on Communications (ICC), 2019, pp. 1–6
